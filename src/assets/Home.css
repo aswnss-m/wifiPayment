@@ -1,0 +1,28 @@
+.homeContainer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.detailsForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.formGroup{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1em;
+}
+.formGroup label{
+    width: fit-content;
+    white-space: nowrap;
+    align-self: center;
+}
+.payButton{
+    font-weight: bolder;
+}
+.payButton:hover{
+    background-color: var(--color-secondary);
+}
