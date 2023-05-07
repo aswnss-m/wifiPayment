@@ -1,20 +1,17 @@
 import React from 'react';
-import Chart from '../components/Chart';
-import PayedTable from '../components/PayedTable';
 import {useState} from 'react';
-import "../assets/Home.css";
+import "../assets/PayForm.css";
 
-function Home() {
+function PayForm() {
     const [anotherPerson, setAnotherPerson] = useState(false);
     return (
         <div className='homeContainer text-black'>
-            <Chart/>
             <form className='detailsForm bg-white'>
                 <div className="formGroup">
                     <label htmlFor="name">
                         Name :
                     </label>
-                    <input type="text" name="name" id="name" placeholder='Enter your name'/>
+                    <input type="text" name="name" id="name" placeholder='Enter your name' className='inputField'/>
                 </div>
                 <div className='formGroup'><label htmlFor="checkbox">Are you paying for some other person ?</label>
                 <input type="checkbox" name="checkbox" id="checkbox" className='checkbox'
@@ -27,15 +24,14 @@ function Home() {
                 anotherPerson && (
                     <div className='formGroup'>
                         <label htmlFor="otherName">His Name:</label>
-                        <input type="text" name="otherName" id="otherName" placeholder="Paying for"/>
+                        <input type="text" name="otherName" id="otherName" placeholder="Paying for" className='inputField'/>
                     </div>
                 )
             } 
-            <input type="submit" value="Pay (Rs.85)" className='bg-primary text-white payButton'/>
+            <input type="submit" value="Pay" className=' inputField  payButton'/>
             </form>
-            <PayedTable />
         </div>
     )
 }
 
-export default Home
+export default PayForm

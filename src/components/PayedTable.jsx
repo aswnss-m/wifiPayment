@@ -3,24 +3,22 @@ import '../assets/PayedTable.css';
 
 function PayedTable() {
   return (
-    <div className='payedTableContainer'>
-      <table className='payedTable'>
-        <caption>PAYMENT DONE</caption>
-        <tbody>
-          <tr className='payedTableRow'>
-            <td>Aswin Lal M</td>
-            <td>10:30AM</td>
-          </tr>
-          <tr className='payedTableRow'>
-            <td>Aswin Lal M</td>
-            <td>10:30AM</td>
-          </tr>
-          <tr className='payedTableRow'>
-            <td>Aswin Lal M(RAhul)</td>
-            <td>10:30AM</td>
-          </tr>
-        </tbody>
-      </table>
+    <div className='payedContainer'>
+      <div className='payedRow'>
+        <div className='payedColumn'>Aswin Lal M</div>
+        <div className='payedColumn'>Rahul</div>
+        <div className='payedColumn'>10:30AM</div>
+      </div>
+      <div className='payedRow'>
+        <div className='payedColumn'>Aswin Lal M</div>
+        <div className='payedColumn'>Rahul</div>
+        <div className='payedColumn'>10:30AM</div>
+      </div>
+      <div className='payedRow'>
+        <div className='payedColumn'>Aswin Lal M</div>
+        <div className='payedColumn'>Rahul</div>
+        <div className='payedColumn'>10:30AM</div>
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
     width: 100%;
-    height: 100vh;
+    margin:1em 0;
 }
 .detailsForm{
     display: flex;
@@ -25,4 +25,13 @@
 }
 .payButton:hover{
     background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+.inputField{
+    background-color: var(--color-primary);
+    border: 0;
+    height: auto;
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 100%;
 }

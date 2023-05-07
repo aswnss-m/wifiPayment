@@ -1,21 +1,19 @@
-import React from 'react'
-import "../assets/Chart.css"
-// import { useState } from 'react'
+import React from 'react';
+import '../assets/Chart.css';
 
-function Chart() {
-    // const [percent,Setpercent] = useState(0);
-    // const totalAmount = 830;
-    const currentAmount = 100;
-    const targetAmount = 830;
-
+function Chart({currentAmount,targetAmount}) {
 
   return (
-        <div className="bg-white progressCricle " style={{'--percentage': (100 * currentAmount / targetAmount) + '%'}}>
-            <div className="amount">
-                <span className="currentAmount">{currentAmount}</span><span className="targetAmount">/{targetAmount}</span>
-            </div>
-        </div>
-  )
+    <div className="progressContainer">
+      <div className="progressText">
+        <span className="currentAmount bold-text">{currentAmount}/</span>
+        <span className="targetAmount">{targetAmount}</span>
+      </div>
+      <div className="progressBar">
+        <div className="progressFill" style={{ width: `${(100 * currentAmount) / targetAmount}%` }} />
+      </div>
+    </div>
+  );
 }
 
-export default Chart
+export default Chart;
