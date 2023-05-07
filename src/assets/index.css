@@ -1,67 +1,89 @@
 :root {
-    --color-bg: #F6F1F1;
-    --color-primary: #19A7CE;
-    --color-secondary: #146C94;
-    --color-text: #0e0e0e;
-  }
-.bg-white{
-    background-color: var(--color-bg);
+  --color-bg: #E2E3EA;
+  --color-primary: #01CCFF;
+  --color-secondary: #262833;
+  --color-text: #0e0e0e;
 }
-.bg-primary{
-    background-color: var(--color-primary);
+
+* {
+  margin: 0;
+  padding: 0;
 }
-.bg-secondary{
-    background-color: var(--color-secondary);
+
+
+.bg-white {
+  background-color: var(--color-bg);
 }
-.bg-black{
-    background-color: var(--color-text);
+
+.bg-primary {
+  background-color: var(--color-primary);
 }
-.text-black{
-    color: var(--color-text);
+
+.bg-secondary {
+  background-color: var(--color-secondary);
 }
-.text-secondary{
-    color: var(--color-secondary);
+
+.bg-black {
+  background-color: var(--color-text);
 }
-.text-primary{
-    color: var(--color-primary);
+
+.text-black {
+  color: var(--color-text);
 }
-.text-white{
-    color: var(--color-bg);
+
+.text-secondary {
+  color: var(--color-secondary);
 }
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-white {
+  color: var(--color-bg);
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 input {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    background-color: var(--color-bg);
-  }
-  
-  input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 0 0 0.2rem rgba(0,123,255,.25);
-  }
-  .checkbox {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    /* background-color: #fff; */
-    /* border: 1px solid gray; */
-    border-radius: 3px;
-    margin-right: 5px;
-  }
-  
-  .checkbox:checked {
-    background-color: #007bff;
-    border-color: #007bff;
-  }  
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  background-color: var(--color-bg);
+}
 
-  body {
-    font-family: 'Poppins', sans-serif;
-  }
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1), 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
 
-  
+.checkbox {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  /* background-color: #fff; */
+  /* border: 1px solid gray; */
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.checkbox:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  /* width: fit-content; */
+}
