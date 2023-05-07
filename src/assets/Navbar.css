@@ -1,0 +1,19 @@
+.navbarContainer {
+    display: grid;
+    width: 100%;
+    place-items: center;
+}
+nav {
+    background-color: var(--color-primary);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr auto;
+    place-self: center;
+    border-radius: 1em;
+    margin: 1em;
+    width: 100%;
+    max-width: 950px;
+}
+nav div {
+    margin: 1em;
+}
